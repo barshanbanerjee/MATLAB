@@ -1,0 +1,14 @@
+Script:
+
+vector=(10:4:30);
+disp(vector);
+mag=norm(vector);
+disp("Magnitude of vector");
+disp(mag);
+
+Output:
+
+10    14    18    22    26    30
+
+Magnitude of vector
+   51.7687
