@@ -1,0 +1,45 @@
+%Script:
+
+matrix1 = [1, 2, 3; 4, 5, 6; 7, 8, 9];
+matrix2 = [9, 8, 7; 6, 5, 4; 3, 2, 1];
+
+
+vector_multiplication_result = matrix1 * matrix2;
+
+
+elementwise_multiplication_result = matrix1 .* matrix2;
+
+disp("Matrix 1:");
+disp(matrix1);
+
+disp("Matrix 2:");
+disp(matrix2);
+
+disp("Vector Multiplication Result (Matrix Multiplication):");
+disp(vector_multiplication_result);
+
+disp("Element-wise Multiplication Result:");
+disp(elementwise_multiplication_result);
+
+%Output:
+
+Matrix 1:
+     1     2     3
+     4     5     6
+     7     8     9
+
+Matrix 2:
+     9     8     7
+     6     5     4
+     3     2     1
+
+Vector Multiplication Result (Matrix Multiplication):
+    30    24    18
+    84    69    54
+   138   114    90
+
+Element-wise Multiplication Result:
+ 9    16    21
+24    25    24
+21    16     9
+
