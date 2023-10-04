@@ -1,0 +1,24 @@
+%Script
+row=(1:10); 
+col=(1:10)' ; 
+
+extrow=row(3:7); 
+extcol=col(3:7); 
+
+disp("Extracted Row:");
+disp(extrow);
+
+disp("Extracted Column:");
+disp(extcol);
+
+%Output:
+
+Extracted Row:
+     3     4     5     6     7
+
+Extracted Column:
+     3
+     4
+     5
+     6
+     7
