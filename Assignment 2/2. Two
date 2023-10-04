@@ -1,0 +1,48 @@
+Script:
+
+matrix1 = randi(10, 4, 4);
+matrix2 = randi(10, 4, 4);
+
+addition_result = matrix1 + matrix2;
+
+subtraction_result = matrix1 - matrix2;
+
+
+disp("Matrix 1:");
+disp(matrix1);
+
+disp("Matrix 2:");
+disp(matrix2);
+
+disp("Addition Result:");
+disp(addition_result);
+
+disp("Subtraction Result:");
+disp(subtraction_result);
+
+Output:
+
+Matrix 1:
+     9     7    10    10
+    10     1    10     5
+     2     3     2     9
+    10     6    10     2
+
+Matrix 2:
+     5     7     7     7
+    10     1     8     2
+     8     9     8     8
+    10    10     4     1
+
+Addition Result:
+    14    14    17    17
+    20     2    18     7
+    10    12    10    17
+    20    16    14     3
+
+Subtraction Result:
+     4     0     3     3
+     0     0     2     3
+    -6    -6    -6     1
+     0    -4     6     1
+
