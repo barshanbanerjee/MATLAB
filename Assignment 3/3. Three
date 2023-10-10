@@ -1,0 +1,17 @@
+%Script:
+
+x = -2;
+y = -3;
+z = 9;
+
+expr = inline('x^e + y^5 + (e^2 + y^z + (5+y)^2) / ((y+z)^7 + 25*e) - 2*(x+z)^9', 'x', 'y', 'z', 'e');
+
+result = expr(x, y, z, exp(1));
+
+disp("Result is");
+disp(result);
+
+%Output:
+
+Result is
+  -8.0707e+07 + 5.0932e+00i
