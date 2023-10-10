@@ -1,0 +1,26 @@
+%Script:
+
+
+matrix = [1 0 3 0 5; 0 0 0 0 0; 0 0 0 0 0; 6 0 0 0 0; 7 8 9 0 0];
+
+zero_counts = zeros(size(matrix, 1), 1);
+
+for i = 1:size(matrix, 1)
+    zero_counts(i) = sum(matrix(i, :) == 0);
+end
+
+disp('Row-wise total number of zero elements:');
+disp(zero_counts);
+
+
+%Output:
+
+
+Row-wise total number of zero elements:
+     2
+     5
+     5
+     4
+     2
+
+
