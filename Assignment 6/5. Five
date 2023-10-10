@@ -1,0 +1,49 @@
+%Script:
+
+
+vector = input('Enter a row or column vector: ');
+
+if isrow(vector)
+    vector = vector';
+end
+
+n = length(vector);
+sum_digits = zeros(n, 1);
+
+for i = 1:n
+    num = fix(vector(i)); 
+    digit_sum = 0;
+    
+   while num > 0
+        digit = mod(num, 10);
+        digit_sum = digit_sum + digit;
+        num = fix(num / 10);
+    end
+    
+    sum_digits(i) = digit_sum;
+end
+
+disp('Original Vector:');
+disp(vector);
+disp('Sum of Digits:');
+disp(sum_digits);
+
+
+
+%Output:
+
+
+
+Enter a row or column vector: 
+[12 34 56]
+Original Vector:
+    12
+    34
+    56
+
+Sum of Digits:
+     3
+     7
+    11
+
+
