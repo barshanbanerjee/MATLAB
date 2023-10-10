@@ -1,0 +1,13 @@
+%Script:
+
+
+syms y(x);
+od = diff(y,x)==(-sin(5*x))/(2*y*cos(3*x)^3);
+c1 = y(pi) == 0;
+ys = dsolve(od, c1);
+disp(ys);
+
+%Output:
+
+
+ (2^(1/2)3^(1/2)(4*log(tan(x/2)^2 - 1) - 2*log(tan(x/2)^4 - 14*tan(x/2)^2 + 1) - 120*tan(x/2)^2*log(tan(x/2)^2 - 1) + 1020*tan(x/2)^4*log(tan(x/2)^2 - 1) - 1808*tan(x/2)^6*log(tan(x/2)^2 - 1) + …………………………………….(infinite elements)
