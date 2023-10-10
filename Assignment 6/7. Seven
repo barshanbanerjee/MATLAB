@@ -1,0 +1,33 @@
+%Script:
+
+
+rows = 5;
+cols = 5;
+
+pattern = zeros(rows, cols);
+
+for i = 1:rows
+    for j = 1:cols
+        if ceil(i/2) == ceil(j/2)
+            pattern(i, j) = 1;
+        end
+    end
+end
+
+
+disp(pattern);
+
+
+%Output:
+
+
+
+     1     1     0     0     0
+     1     1     0     0     0
+     0     0     1     1     0
+     0     0     1     1     0
+     0     0     0     0     1 
+
+
+
+
