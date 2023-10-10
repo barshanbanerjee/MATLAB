@@ -1,0 +1,12 @@
+%Script:
+
+data = readtable("titanic_ps.csv.xlsx");
+cond = data(data.Pclass == 2 & data.Survived == 1,:);
+mean_fare = mean(cond.Fare);
+fprintf("Avarage Fare: %d", mean_fare);
+
+
+%Output:
+
+Avarage Fare: 2.643875e+01
+
