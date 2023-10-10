@@ -1,0 +1,43 @@
+%Script:
+
+
+
+identity_matrix = eye(4);
+
+upper_diagonal_matrix = triu(identity_matrix);
+
+lower_diagonal_matrix = tril(identity_matrix);
+
+disp('Identity Matrix:');
+disp(identity_matrix);
+
+disp('Upper Diagonal Matrix:');
+disp(upper_diagonal_matrix);
+
+disp('Lower Diagonal Matrix:');
+disp(lower_diagonal_matrix);
+
+
+%Output:
+
+
+
+Identity Matrix:
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+
+Upper Diagonal Matrix:
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+
+Lower Diagonal Matrix:
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+
+
