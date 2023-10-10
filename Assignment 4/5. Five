@@ -1,0 +1,14 @@
+%Script:
+
+
+syms y(x);
+od = diff(y,x)==(x*(1+y^2)^1/2)/y*(1+x^2)^1/2;
+c1=y(1)==10;
+ys=dsolve(od,c1);
+disp(ys);
+
+%Output:
+
+
+(exp(x^4/8 + x^2/4 + log(101) - 3/8) - 1)^(1/2)
+
