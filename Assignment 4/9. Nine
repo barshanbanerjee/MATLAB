@@ -1,0 +1,10 @@
+%Script:
+
+syms w;
+s = int((20*exp(2-8*w))(sqrt(1+exp(2-(8*w))))+(7(w^3))-(6*(nthroot(w,3))));
+disp(s);
+
+%Output:
+
+(7*w^4)/4 - (9*w*nthroot(w, 3))/2 - (5*(exp(2 - 8*w) + 1)^(3/2))/3
+
