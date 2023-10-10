@@ -1,0 +1,17 @@
+%Function:
+
+function y =it(x)
+y = ((x^3) + (5*(exp(8)+2)^5)) / ((x^8) + (((x+2)^5)/2) + 25)^8 ;
+
+
+end
+ 
+%Script:
+
+z=it(8);
+disp(z);
+
+
+%Output:
+
+1.8370e-40
