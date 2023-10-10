@@ -1,0 +1,14 @@
+%Script:
+
+data = readtable("titanic_ps.csv.xlsx");
+cond = data(data.Survived == 1,:);
+[min_fare, index] = min(cond.Fare);
+
+disp('Person with min fare: ');
+disp(data.Name(index));
+
+%Output:
+
+Person with min fare: 
+    {'Willer, Mr. Aaron (Abi Weller")"'}
+
