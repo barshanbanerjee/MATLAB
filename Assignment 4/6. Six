@@ -1,0 +1,11 @@
+%Script:
+
+
+syms z;
+s = int(6*cos(z)+4/sqrt(1-2^2));
+disp(s);
+
+%Output:
+
+
+6*sin(z) - (3^(1/2)*z*4i)/3
