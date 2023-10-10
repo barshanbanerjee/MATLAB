@@ -1,0 +1,5 @@
+%Script:
+
+data = readtable("titanic_ps.csv.xlsx");
+disp(sortrows(data, data.Pclass));
+
