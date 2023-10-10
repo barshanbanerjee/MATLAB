@@ -1,0 +1,13 @@
+%Script:
+
+syms y(x);
+od = diff(y,x)==(exp(-y)+exp(-2*x-y))/(exp(x)*y);
+ys = dsolve(od);
+disp(ys);
+
+%Output:
+
+
+(-(exp(- 3*x - y)*(6*exp(2*x) - 3*C1*exp(3*x + y) + 2))/3)^(1/2)
+-(-(exp(- 3*x - y)*(6*exp(2*x) - 3*C1*exp(3*x + y) + 2))/3)^(1/2)
+
