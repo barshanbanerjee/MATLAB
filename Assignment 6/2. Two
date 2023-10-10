@@ -1,0 +1,39 @@
+%Script:
+
+
+rowVector = [1, 2, 3, 4, 5];
+colVector = [1; 2; 3; 4; 5];
+
+
+multMatrix = rowVector * colVector;
+
+
+resultMatrix = zeros(size(multMatrix));
+
+for i = 1:size(multMatrix, 1)
+    for j = 1:size(multMatrix, 2)
+        if sqrt(multMatrix(i, j)) == floor(sqrt(multMatrix(i, j)))
+            resultMatrix(i, j) = 1; 
+        else
+            resultMatrix(i, j) = multMatrix(i, j); 
+        end
+    end
+end
+
+disp('Multiplication Matrix:');
+disp(multMatrix);
+
+disp('Result Matrix with Perfect Squares Replaced by 1:');
+disp(resultMatrix);
+
+
+%Output:
+
+Multiplication Matrix:
+    55
+
+Result Matrix with Perfect Squares Replaced by 1:
+    55
+
+ 
+
