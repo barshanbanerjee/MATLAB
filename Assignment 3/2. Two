@@ -1,0 +1,16 @@
+%Function:
+
+function y =it(x)
+y = ((x^8) + (exp(x+8)+2*x)^9) / ((2^x) + (x^8)+(2^(exp(1))))^8 ;
+end
+
+%Script:
+
+z=it(-2);
+disp(z);
+
+
+%Output:
+
+1.1364e+04
+
