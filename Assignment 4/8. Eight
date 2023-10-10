@@ -1,0 +1,10 @@
+%Script:
+
+
+syms v;
+s = int(((sec(v))^2)*exp(1+tan(v)));
+disp(s);
+
+%Output:
+
+exp(1)*exp(sin(v)/cos(v))
