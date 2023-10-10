@@ -1,0 +1,5 @@
+%Script:
+
+data = readtable("titanic_ps.csv.xlsx");
+cond = data(data.Survived == 0 & data.Age < 18,:);
+disp(cond);
