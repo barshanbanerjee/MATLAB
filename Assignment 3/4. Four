@@ -1,0 +1,18 @@
+%Script:
+
+x = -5;
+y = -4;
+z = 2;
+
+e = exp(1); 
+
+expr = inline(['x^3 + z^x + y^2*e + ((x + 8^e - pi^9)^2*e) / (2*(x + y^8 + 2*pi))'], 'x', 'y', 'z', 'e');
+
+result = expr(x, y, z, e);
+
+disp(result);
+
+
+%Output:
+
+1.8002e+04
