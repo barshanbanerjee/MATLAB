@@ -1,0 +1,15 @@
+%Script:
+
+p = -5;
+q = -2;
+r = 3;
+
+result = pi^4 + exp(pi) + p^5 + q^exp(1) + ((q^8 + 4*r - q*r) / (r^exp(1) + 8*r + p^q));
+
+fprintf('The result of the expression is: %f\n', result);
+
+
+%Output:
+
+The result of the expression is: -3002.369451
+
